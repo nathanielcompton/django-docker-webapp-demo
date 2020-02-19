@@ -26,7 +26,7 @@ def index(request):
         "main_article": newest_promise_article,
         "article_1": random.choice(articles),
         "article_2": random.choice(articles),
-        "article_3": random.choice(articles)
+        "article_3": random.choice(articles),
     }
     return render(request, "blog/home.html", context)
 
@@ -42,7 +42,7 @@ def index_throwback(request):
         "main_article": newest_promise_article,
         "article_1": random.choice(articles),
         "article_2": random.choice(articles),
-        "article_3": random.choice(articles)
+        "article_3": random.choice(articles),
     }
     return render(request, "throwback/home.html", context)
 
@@ -54,7 +54,7 @@ def article_detail(request, uuid):
         "article_det": article,
         "quote_1": random.choice(quotes),
         "quote_2": random.choice(quotes),
-        "quote_3": random.choice(quotes)
+        "quote_3": random.choice(quotes),
     }
     return render(request, "blog/article.html", context)
 
@@ -66,7 +66,7 @@ def article_detail_throwback(request, uuid):
         "article_det": article,
         "quote_1": random.choice(quotes),
         "quote_2": random.choice(quotes),
-        "quote_3": random.choice(quotes)
+        "quote_3": random.choice(quotes),
     }
     return render(request, "throwback/article.html", context)
 

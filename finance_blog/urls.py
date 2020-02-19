@@ -13,7 +13,7 @@ urlpatterns = [
     path(
         "throwback/<uuid:uuid>",
         views.article_detail_throwback,
-        name="article_detail_throwback"
+        name="article_detail_throwback",
     ),
-    path("ajax/quotes", views.get_three_more_quotes, name="get_three_more_quotes")
+    path("ajax/quotes", views.get_three_more_quotes, name="get_three_more_quotes"),
 ]
