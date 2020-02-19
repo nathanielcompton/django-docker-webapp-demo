@@ -29,7 +29,7 @@ $ docker-compose up -d --build
 $ docker-compose exec web python manage.py migrate
 ```
 
-To verify a successful build with Docker, navigate to: http://localhost:8000/sanity
+To verify a successful build with Docker, navigate to: http://localhost:8000/sanity.
 Once built, the project's main demonstration page will be at: http://localhost:8000/investing
 
 Django can easily be interacted with through Docker as well.
