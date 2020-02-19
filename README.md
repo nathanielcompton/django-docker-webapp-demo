@@ -30,6 +30,7 @@ $ docker-compose exec web python manage.py migrate
 ```
 
 To verify a successful build with Docker, navigate to: http://localhost:8000/sanity
+Once built, the project's main demonstration page will be at: http://localhost:8000/investing
 
 Django can easily be interacted with through Docker as well.
 ```sh
@@ -37,7 +38,6 @@ docker-compose exec web [STANDARD_DJANGO_COMMAND] [OPTIONS]
 ```
 
 Bringing down containers is done simply with:
-
 ```sh
 $ docker-compose down -v
 ```
@@ -49,10 +49,9 @@ the heavy lifting with installation, and in a reproducible and predictable manne
   - Installing all libraries and Python dependencies
 
 With Python, the ability to quickly restart and rebuild a healthy
-development environment without the hassle of traditional (and historically frustrating)
-virtual environment management.
-
-Verify a successful build by navigating to ``localhost:8000/sanity``.
+development environment is extremely vital. This is especially important given Python's
+reputation of being a hassle with virtual environment setup, multiple package
+management libraries, etc. Docker helps to streamline all of that.
 
 ## Code Formatting, Configuration Management and Cleanliness
 I included the [Black] formatting tool to maintain a high-degree of code format
@@ -115,9 +114,11 @@ improvements.
     - Integration of things like: notifications, communication channels, etc.
     - CI/CD automation retries
     - Better mobile support
+    - Add API structure documentation (i.e. a `swagger.yml` file) with [OAS v3.0] spec.
 - ```Anything you did to make make the application your own.```
-  - Lots of time spent on architecture and organization
-  - Also, please visit the "THROWBACK" Easter egg website
+  - Lots of time spent on architecture and organization.
+  - The addition of: Docker, Github CI/CD, Python Poetry (`pyproject.toml`), etc.
+  - Also, please visit the `Throwback` Easter egg website.
 
 
 ## Final Thoughts
