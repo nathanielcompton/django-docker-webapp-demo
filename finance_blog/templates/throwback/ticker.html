@@ -1,0 +1,104 @@
+<section class="related-tickers">
+    <div class="block-title">
+        <hr><h2>Stonks</h2>
+    </div>
+    <div class="ticker-row">
+        <div>
+            <span class="image-wrap">
+            </span>
+            <h3>{{ quote_1.company_name }}</h3>
+            <h4>
+                <span class="ticker">
+                    <a title="{{ quote_1.company_name }} Stock Quote" href="#">
+                        {{ quote_1.exchange }}:<span class="symbol"> {{ quote_1.symbol }}</span>
+                    </a>
+                </span>
+            </h4>
+            <aside class="price-quote-container">
+                <h4 class="current-price">
+                    {{ quote_1.current_price }}
+                </h4>
+                <h4 class="price-change-amount price-neg">
+                    {{ quote_1.change }}
+                </h4>
+                <h4 class="price-change-percent price-neg">
+                    ({{ quote_1.percent_change|floatformat:2 }}%)
+                </h4>
+            </aside>
+        </div>
+    </div>
+    <div class="ticker-row">
+        <div>
+            <h3>{{ quote_2.company_name }}</h3>
+            <h4>
+                <span class="ticker">
+                    <a title="{{ quote_2.company_name }} Stock Quote" href="#">
+                        {{ quote_2.exchange }}:<span class="symbol"> {{ quote_2.symbol }}</span>
+                    </a>
+                </span>
+            </h4>
+            <aside class="price-quote-container">
+                <h4 class="current-price">
+                    {{ quote_2.current_price }}
+                </h4>
+                <h4 class="price-change-amount price-pos">
+                    {{ quote_2.change }}
+                </h4>
+                <h4 class="price-change-percent price-pos">
+                    ({{ quote_2.percent_change|floatformat:2 }}%)
+                </h4>
+            </aside>
+        </div>
+    </div>
+    <div class="ticker-row">
+        <div>
+            <h3>{{ quote_3.company_name }}</h3>
+            <h4>
+                <span class="ticker">
+                    <a title="{{ quote_3.company_name }} Stock Quote" href="#">
+                        {{ quote_3.exchange }}:<span class="symbol"> {{ quote_3.symbol }}</span>
+                    </a>
+                </span>
+            </h4>
+            <aside class="price-quote-container">
+                <h4 class="current-price">
+                    {{ quote_3.current_price }}
+                </h4>
+                <h4 class="price-change-amount price-pos">
+                    {{ quote_3.change }}
+                </h4>
+                <h4 class="price-change-percent price-pos">
+                    ({{ quote_3.percent_change|floatformat:2 }}%)
+                </h4>
+            </aside>
+        </div>
+    </div>
+  </section>
+  <a href="#" class="quotebutton btn btn-primary">REFRESH QUOTES</a>
+  <section class="read-more-section">
+    <div class="block-title">
+        <hr><h2>Read More</h2>
+    </div>
+    <ul class="two-line-list">
+        <li><a href="/investing/throwback">It is a long established fact that a reader</a></li>
+        <li><a href="/investing/throwback">Many desktop publishing packages and web page editors now use</a></li>
+        <li><a href="/investing/throwback">Contrary to popular belief, Lorem Ipsum is not simply random text</a></li>
+        <li><a href="/investing/throwback">There are many variations of passa</a></li>
+        <li><a href="/investing/throwback" >If you are going to use a passage of Lorem Ipsum</a></li>
+    </ul>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".quotebutton").click(function() {
+        $.ajax({
+            type: "GET",
+            url: "/investing/ajax/quotes",
+            data: { csrfmiddlewaretoken: '{{ csrf_token }}' },
+            success: function(response) {
+              alert(response);
+            }
+          });
+        });
+    });
+</script>

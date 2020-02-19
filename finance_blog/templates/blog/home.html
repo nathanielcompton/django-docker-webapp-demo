@@ -1,0 +1,79 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  <div class="container content-inner">
+      <div class="main-col">
+          <section class="jumbo-card card">
+              <div class="card-image">
+                  <a href="{{ main_article.uuid }}"><img src="{{ main_article.featured_image_url }}" alt="{{ main_article.featured_image_name}}" class="img-responsive"></a>
+              </div>
+              <div class="card-elements">
+                  <div class="card-header">
+                      <a href="{{ main_article.uuid }}"><h3>{{ main_article.headline }}</h3></a>
+                      <p class="author">{{ main_article.byline }} | {{ main_article.publish_at }} </p>
+                  </div>
+                  <div class="card-copy">
+                      <p>{{ main_article.promo }}</p>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <div class="cards row">
+          <div class="card">
+              <div class="card-image">
+                  <a href="{{ article_1.uuid }}">
+                      <img src="{{ article_1.featured_image_url }}" alt="{{ article_1.featured_image_name }}">
+                  </a>
+              </div>
+              <div class="card-elements">
+                  <div class="card-header">
+                      <a href="{{ article_1.uuid }}">
+                          <h4>{{ article_1.headline }}</h4>
+                      </a>
+                      <p class="author">{{ article_1.byline }} | {{ article_1.publish_at }} </p>
+                  </div>
+                  <div class="card-copy">
+                      <p>{{ article_1.promo }}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-image">
+                  <a href="{{ article_2.uuid }}">
+                    <img src="{{ article_2.featured_image_url }}" alt="{{ article_2.featured_image_name }}">
+                  </a>
+              </div>
+              <div class="card-elements">
+                  <div class="card-header">
+                      <a href="{{ article_2.uuid }}">
+                          <h4>{{ article_2.headline }}</h4>
+                      </a>
+                      <p class="author">{{ article_2.byline }} | {{ article_2.publish_at }}</p>
+                  </div>
+                  <div class="card-copy">
+                      <p>{{ article_2.promo }}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-image">
+                  <a href="{{ article_3.uuid }}">
+                      <img src="{{ article_3.featured_image_url }}" alt="{{article_3.featured_image_name }}">
+                  </a>
+              </div>
+              <div class="card-elements">
+                  <div class="card-header">
+                      <a href="{{ article_3.uuid }}">
+                          <h4>{{ article_3.headline }}</h4>
+                      </a>
+                      <p class="author">{{ article_3.byline }} | {{ article_3.publish_at }}</p>
+                  </div>
+                  <div class="card-copy">
+                      <p>{{ article_3.promo }}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock %}

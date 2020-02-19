@@ -1,0 +1,124 @@
+{% extends 'throwback/base.html' %}
+{% load static %}
+
+{% block content %}
+<center>
+  <img src="{% static 'throwback/img/mchammer.gif' %}">
+  <img src="{% static 'throwback/img/mchammer.gif' %}">
+  <img src="{% static 'throwback/img/mchammer.gif' %}">
+</center>
+<header class="jumbotron subhead" id="overview">
+  <div class="row">
+    <div class="span8">
+      <h1><img src="{% static 'throwback/img/test/7upspot.gif' %}">&nbsp;<FONT COLOR="#FF0000">M</FONT><FONT COLOR="#FF5A00">o</FONT><FONT COLOR="#FFB400">t</FONT><FONT COLOR="#FFff00"></FONT><FONT COLOR="#A5ff00">l</FONT><FONT COLOR="#4Bff00">e</FONT><FONT COLOR="#00ff00">y</FONT><FONT COLOR="#00ff5A"></FONT> <FONT COLOR="#00ffB4">F</FONT><FONT COLOR="#00ffff">o</FONT><FONT COLOR="#00B4ff">o</FONT><FONT COLOR="#005Aff">l</FONT> <blink><FONT COLOR="#0000ff">Pr</FONT><FONT COLOR="#4B00ff">oj</FONT><FONT COLOR="#A500ff">ec</FONT><FONT COLOR="#FF00ff">t</FONT><FONT COLOR="#FF00B4">!</FONT></blink></h1>
+      <p class="lead">This recommendation engine probably needs tuning.</p>
+      <table cellpadding="2" cellspacing="2">
+        <tr>
+          <td>
+            <img src="{% static 'throwback/img/test/ie_logo.gif' %}">
+          </td>
+          <td>
+            <img src="{% static 'throwback/img/test/ns_logo.gif' %}">
+          </td>
+          <td>
+            <img src="{% static 'throwback/img/test/noframes.gif' %}">
+          </td>
+          <td>
+            <img src="{% static 'throwback/img/test/notepad.gif' %}">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="span6">
+      <center>
+        <img src="{% static 'throwback/img/test/yahooweek.gif' %}">
+        <img src="{% static 'throwback/img/test/community.gif' %}">
+        <img src="{% static 'throwback/img/test/wabwalk.gif' %}">
+        <img src="{% static 'throwback/img/test/webtrips.gif' %}">
+      </center>
+    </div>
+  </div>
+  <marquee>This site requires: Crystal Pepsi, at least one PBMax Candy Bar, and a "Space Jam" basketball jersey.</marquee>
+
+</header>
+
+<!-- This is a copy-and-paste job from the actual coding project. I know some of this isn't correct.  -->
+<div class="container content-inner">
+    <div class="main-col">
+        <section class="jumbo-card card">
+            <div class="card-image">
+                <a href="throwback/{{ main_article.uuid }}"><img src="{{ main_article.featured_image_url }}" alt="{{ main_article.featured_image_name}}" class="img-responsive"></a>
+            </div>
+            <div class="card-elements">
+                <div class="card-header">
+                    <a href="throwback/{{ main_article.uuid }}"><h3>{{ main_article.headline }}</h3></a>
+                    <p class="author">{{ main_article.byline }} | {{ main_article.publish_at }} </p>
+                </div>
+                <div class="card-copy">
+                    <p>{{ main_article.promo }}</p>
+                    <br><center><img src="{% static 'throwback/img/rainbow.gif' %}"></center><br>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="cards row">
+        <div class="card">
+            <div class="card-image">
+                <a href="throwback/{{ article_1.uuid }}">
+                    <img src="{{ article_1.featured_image_url }}" alt="{{ article_1.featured_image_name }}">
+                </a>
+            </div>
+            <div class="card-elements">
+                <div class="card-header">
+                    <a href="throwback/{{ article_1.uuid }}">
+                        <h4>{{ article_1.headline }}</h4>
+                    </a>
+                    <p class="author">{{ article_1.byline }} | {{ article_1.publish_at }} </p>
+                </div>
+                <div class="card-copy">
+                    <p>{{ article_1.promo }}</p>
+                    <br><center><img src="{% static 'throwback/img/rainbow.gif' %}"></center><br>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="throwback/{{ article_2.uuid }}">
+                  <img src="{{ article_2.featured_image_url }}" alt="{{ article_2.featured_image_name }}">
+                </a>
+            </div>
+            <div class="card-elements">
+                <div class="card-header">
+                    <a href="throwback/{{ article_2.uuid }}">
+                        <h4>{{ article_2.headline }}</h4>
+                    </a>
+                    <p class="author">{{ article_2.byline }} | {{ article_2.publish_at }}</p>
+                </div>
+                <div class="card-copy">
+                    <p>{{ article_2.promo }}</p>
+                    <br><center><img src="{% static 'throwback/img/rainbow.gif' %}"></center><br>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="throwback/{{ article_3.uuid }}">
+                    <img src="{{ article_3.featured_image_url }}" alt="{{article_3.featured_image_name }}">
+                </a>
+            </div>
+            <div class="card-elements">
+                <div class="card-header">
+                    <a href="throwback/{{ article_3.uuid }}">
+                        <h4>{{ article_3.headline }}</h4>
+                    </a>
+                    <p class="author">{{ article_3.byline }} | {{ article_3.publish_at }}</p>
+                </div>
+                <div class="card-copy">
+                    <p>{{ article_3.promo }}</p>
+                    <br><center><img src="{% static 'throwback/img/rainbow.gif' %}"></center><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

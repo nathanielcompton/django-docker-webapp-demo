@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  <body>
+      <div class="container article-content-inner">
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="article-header">
+                      <header>
+                          <div id="adv_text" class="adv-heading"></div>
+                          <h1>{{ article_det.headline }}</h1>
+                          <!--<h2>You won't believe the specs on these new all-electric vehicles. </h2>-->
+                      </header>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <main class="col-sm-7 col-md-8">
+                  <div class="author-tagline author-inline">
+                      <div class="author-and-date">
+                          <div class="author-byline">
+                              <div class="author-name">{{ article_det.byline }}</div>
+                          </div>
+                          <div class="article-pub-date">
+                              <div class="publication-date">
+                                  {{ article_det.publish_at }}
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <section class="article-body">
+                      <div class="article-content">
+                          {{ article_det.body|safe }}
+                      </div>
+                      <div class="article-disclosure">
+                          <p><em>{{ article_det.disclosure|safe }}</em></p>
+                      </div>
+                      <div class="special-message">
+                          <p><strong>Nathaniel Compton is a Software Engineer<br></strong>Currently based out of Atlanta, Georgia.</p>
+                          <p>For professional details and further informationplease visit:</p>
+                          <p><a class="btn" target="_blank" href="https://www.linkedin.com/in/nathanielcompton">LinkedIn</a>
+                          <a class="btn" target="_blank" href="http://www.nathanielcompton.com">Portfolio</a>
+                          <a class="btn" target="_blank" href="https://www.github.com/nathanielcompton">Github</a></p>
+
+                      </div>
+                  </section>
+              </main>
+              <aside class="col-sm-5 col-md-4 p-l">
+                  {% include "blog/ticker.html" %}
+              </aside>
+          </div>
+      </div>
+  </body>
+{% endblock %}

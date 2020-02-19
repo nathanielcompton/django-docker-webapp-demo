@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Motley Foot Interview Project</title>
+        <script src="{% static 'blog/js/jquery-3.1.1.min.js' %}"></script>
+        <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'blog/js/main.js' %}"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'blog/img/favicon.png' %}">
+        <link href="{% static 'throwback/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'throwback/css/bootstrap.css' %}" rel="stylesheet">
+      </head>
+      <body>
+          <div class="container top-bar">
+              <a href="/investing" class="btn btn-primary">GET ME OUTTA HERE</a>
+              <a href="/investing/throwback" class="btn btn-secondary" style="float: right;">THROWBACK HOME</a>
+          </div>
+          {% block content %}
+          {% endblock %}
+
+          <br><br><br><br>
+
+          <footer class="footer">
+            <p class="pull-left" style="margin-top: -14px"><img src="{% static 'throwback/img/test/geocities.jpg' %}"></p>
+            <p class="pull-right" style="margin-top: -14px"><img src="{% static 'throwback/img/test/hacker.gif' %}">&nbsp; Built by Nathaniel Compton</a></p>
+          </footer>
+          <center><img src="{% static 'throwback/img/test/counter2.gif' %}"></center>
+        </div>
+      </body>
+  </html>
