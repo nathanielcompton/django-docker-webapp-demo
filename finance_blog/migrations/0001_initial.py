@@ -166,6 +166,8 @@ class Migration(migrations.Migration):
                 ("website", models.URLField()),
                 ("last_trade_date", models.DateTimeField()),
             ],
-            options={"unique_together": {("symbol", "exchange", "last_trade_date")},},
+            options={
+                "unique_together": {("symbol", "exchange", "last_trade_date")},
+            },
         ),
     ]
