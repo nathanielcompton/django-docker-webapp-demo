@@ -10,7 +10,7 @@ max-line-length = 90
 
 [tool.poetry.dependencies]
 python = "^3.8"
-django = "^3.0.3"
+django = "^4.0.4"
 psycopg2 = "^2.8.4"
 
 [tool.poetry.dev-dependencies]
