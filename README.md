@@ -1,7 +1,7 @@
 # Motley Fool Developer Interview Project
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Black Formatter](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![M.F. Interview Project](https://github.com/nathanielcompton/motley-devinterviewcompton/workflows/M.F.%20Interview%20Project/badge.svg)
 
-This project contains my submission as part of The Motley Fool Developer Interview.
+This project was originally created as part of a technical interview.
 It showcases a number of important concepts that Python/Django engineers should stay
 aware of.
 
@@ -9,16 +9,15 @@ aware of.
 
 This API service implements a few key libraries for demonstration of various related skill sets:
 
-  - [Python 3.8]
+  - Python 3.13
   - [Django] - A lightweight WSGI web application framework for Python
   - [Black] - An uncompromising Python code formatter
   - [Pytest] - Small, scalable testing for Python
-  - [Poetry] - Python packaging made easy
   - [Github Actions] - Version control and test-build-deploy pipeline automation
   - [Docker] - Containerization for faster, consistent and more reliable development
 
 ## Quickstart
-This project requires [Python 3.8] and [Docker] to run.
+This project requires Python 3.13 and [Docker] to run.
 
 ```sh
 # First, ensure the entrypoint script is executable.
@@ -121,14 +120,6 @@ improvements.
   - Also, please visit the `Throwback` Easter egg website.
 
 
-## Final Thoughts
-I had a genuinely pleasant time working on this project, and I definitely will continue
-working as time permits. I am also extremely excited about the opportunity to work with
-a solid team like Motley Fool. I see the opportunity as both a way for my to take
-advantage of my current skills, and to get meaningful feedback and mentorship from
-others with much more experience and knowledge. Thank you for your time!
-
-
 License
 ----
 
@@ -137,13 +128,9 @@ License
 
 [//]: # (These are reference links are hidden during Markdown file build.)
 
-
-   [Python 3.8]: <https://www.python.org/downloads/release/python-380/>
    [Django]: <https://www.djangoproject.com/>
    [Black]: <https://black.readthedocs.io/en/stable/>
    [Pytest]: <https://docs.pytest.org/en/latest/>
-   [Pyenv]: <https://github.com/pyenv/pyenv>
-   [Poetry]: <https://python-poetry.org/>
    [OAS v3.0]: <https://www.openapis.org/>
    [Github Actions]: <https://github.com/features/actions>
    [Docker]: <https://www.docker.com/>
