@@ -14,7 +14,7 @@ django = "^4.0.4"
 psycopg2 = "^2.8.4"
 
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
+black = "^24.3"
 pytest = "^5.3.5"
 pytest-django = "^3.8.0"
 pytest-cov = "^2.8.1"
