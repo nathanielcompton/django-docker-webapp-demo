@@ -1,5 +1,5 @@
 # Motley Fool Developer Interview Project
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Black Formatter](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![M.F. Interview Project](https://github.com/nathanielcompton/motley-devinterviewcompton/workflows/M.F.%20Interview%20Project/badge.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Black Formatter](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![Github Actions](https://github.com/nathanielcompton/motley-devinterviewcompton/workflows/M.F.%20Interview%20Project/badge.svg)
 
 This project was originally created as part of a technical interview.
 It showcases a number of important concepts that Python/Django engineers should stay

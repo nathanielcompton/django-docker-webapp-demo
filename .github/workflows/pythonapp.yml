@@ -1,4 +1,4 @@
-name: M.F. Interview Project
+name: Django demo app
 on: [push]
 jobs:
   build:
@@ -20,12 +20,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        yml: ./codecov.yml
-        fail_ci_if_error: true
