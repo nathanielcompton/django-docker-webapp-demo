@@ -23,7 +23,7 @@ within the scope of the Model object for both isolation and readability.
 import uuid
 from django.db import models
 from django.core.exceptions import ValidationError
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 
 class Author(models.Model):
