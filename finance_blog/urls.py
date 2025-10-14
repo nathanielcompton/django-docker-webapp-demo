@@ -2,6 +2,7 @@
 URLconf routing for the `finance_blog` app, on on Django 3.0+ documentation.
 The main project `urls.py` should `include()` these paths.
 """
+
 from django.urls import path
 
 from . import views

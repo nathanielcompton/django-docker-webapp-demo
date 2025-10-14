@@ -4,6 +4,7 @@ minimizing the bulky overhead of HTML + CSS + JS traditionally required in an HT
 
 TODO: Finish implementing
 """
+
 from datetime import datetime
 from django import forms
 

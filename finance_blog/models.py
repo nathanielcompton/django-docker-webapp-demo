@@ -19,6 +19,7 @@ those fields, or have added 'sample' enumerated choices for demonstration purpos
 Also, per Django documentation standards, Model-level constants and defaults are kept
 within the scope of the Model object for both isolation and readability.
 """
+
 import uuid
 from django.db import models
 from django.core.exceptions import ValidationError

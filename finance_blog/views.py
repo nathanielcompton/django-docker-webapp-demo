@@ -4,6 +4,7 @@ updated HTML + CSS for the UI. Eventually I plan to make the duplicate functions
 follow 'Don't Repeat Yourself (D.R.Y.)' principles. I would also consider making some
 kind of `/helpers/` directory to house the non-standard helper/utility functions.
 """
+
 import random
 from django.forms.models import model_to_dict
 from django.http import HttpResponse
